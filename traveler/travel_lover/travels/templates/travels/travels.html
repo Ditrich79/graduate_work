@@ -1,0 +1,18 @@
+{% extends 'travels/base.html' %}
+
+{% block content %}
+<h2>Путешествия по странам мира:</h2>
+
+<div class="block">
+    {% for travel in travels %}
+    <div class="element">
+        <div><img src="{{ travel.image.url }}" alt=""></div>
+        <div class="text">
+            <h2><a href="{{ travel.url }}" target="_blank">{{ travel.title }}</a></h2>
+            <p>{{ travel.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
