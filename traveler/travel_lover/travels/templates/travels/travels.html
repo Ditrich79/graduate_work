@@ -8,8 +8,8 @@
     <div class="element">
         <div><img src="{{ travel.image.url }}" alt=""></div>
         <div class="text">
-            <h2><a href="{{ travel.url }}" target="_blank">{{ travel.title }}</a></h2>
-            <p>{{ travel.description }}</p>
+            <h2><a href="{% url 'travel' travel.id %}">{{ travel.title }}</a></h2>
+            <p>{{ travel.description|striptags|truncatechars:200 }}</p>
         </div>
     </div>
     {% endfor %}

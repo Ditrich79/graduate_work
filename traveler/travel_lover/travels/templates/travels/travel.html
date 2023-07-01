@@ -1,0 +1,13 @@
+{% extends 'travels/base.html' %}
+
+{% block content %}
+<div class="element">
+
+    <div><img src="{{ travel.image.url }}" alt=""></div>
+    <div>
+        <h2 class="single_travel_title">{{ travel.title }}</h2>
+        {{ travel.description|safe }}
+    </div>
+
+</div>
+{% endblock %}
