@@ -1,15 +1,18 @@
 {% extends 'travels/base.html' %}
 
 {% block content %}
-<h2>Путешествия по странам мира:</h2>
-
+<div class="element_title">
+    <div class="text">
+        <h2 class="main_title">Путешествия по странам мира:</h2>
+    </div>
+</div>
 <div class="block">
     {% for travel in travels %}
     <div class="element">
-        <div><img src="{{ travel.image.url }}" alt=""></div>
+        <div><a href="{% url 'travel' travel.id %}"><img src="{{ travel.image.url }}" alt=""></a></div>
         <div class="text">
             <h2><a href="{% url 'travel' travel.id %}">{{ travel.title }}</a></h2>
-            <p>{{ travel.description|striptags|truncatechars:200 }}</p>
+            <p>{{ travel.description|striptags|truncatechars:250 }}</p>
         </div>
     </div>
     {% endfor %}

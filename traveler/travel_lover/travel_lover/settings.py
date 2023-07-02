@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'travels.apps.TravelsConfig',
+    'living_worlds.apps.LivingWorldsConfig',
 ]
 
 MIDDLEWARE = [

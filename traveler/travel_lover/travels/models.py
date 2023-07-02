@@ -3,9 +3,8 @@ from django.db import models
 
 class Travels(models.Model):
     title = models.CharField(max_length=100)
-    description = models.CharField(max_length=250)
+    description = models.TextField(null=True, blank=True)
     image = models.ImageField(upload_to='travels/images/')
-    url = models.URLField(blank=True)
 
     def __str__(self):
         return self.title

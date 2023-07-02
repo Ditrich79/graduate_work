@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="living_worlds" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel lover</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'travels/favicon.ico' %}">
+</head>
+<body>
+{% include 'travels/navbar.html' %}
+    <div class="content">
+        <div class="wrap">
+            {% block content %}
+            <div class="element_title">
+                <div class="text">
+                    <h2 class="main_title">Живой мир:</h2>
+                </div>
+            </div>
+            {% endblock %}
+        </div>
+    </div>
+
+</body>
+</html>

@@ -62,7 +62,7 @@ a{
     color: mintcream;
 }
 a:hover{
-    color: cornsilk;
+    color: #e7d9a2;
 }
 .text p{
     font-size: 20px;
@@ -191,4 +191,32 @@ a b, .completed b{
 }
 #id_memo{
     font-size: 14px;
+}
+.text2{
+    width: 1000px;
+    padding: 40px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #032929;
+}
+.text2 h2, h4{
+    text-align: center;
+}
+.main_title{
+    color: mintcream;
+}
+.element_title{
+    background-color: orange;
+    border: 4px solid white;
+    margin: 20px 0;
+}
+.living_worlds{
+    background-image: url(31362-priroda_derevya_reka_nature_trees_river.jpg);  
+    background-repeat: no-repeat;   
+    background-position: center center; 
+    background-attachment: fixed; 
+    -webkit-background-size: cover;  
+    -moz-background-size: cover;  
+    -o-background-size: cover; 
+    background-size: cover;
 }
