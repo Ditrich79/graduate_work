@@ -1,0 +1,22 @@
+{% extends 'living_worlds/living_worlds.html' %}
+
+
+{% block content %}
+<div class="element_title">
+    <div class="text">
+        <h2 class="main_title">Живой мир нашей планеты:</h2>
+    </div>
+</div>
+<div class="block">
+    {% for world in worlds %}
+    <div class="element">
+        <div><a href="{% url 'world' world.id %}"><img src="{{ world.image.url }}" alt=""></a></div>
+        <div class="text">
+            <h2><a href="{% url 'world' world.id %}">{{ world.title }}</a></h2>
+            <p>{{ world.description|striptags|truncatechars:250 }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

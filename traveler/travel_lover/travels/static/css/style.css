@@ -197,7 +197,7 @@ a b, .completed b{
     padding: 40px;
     box-sizing: border-box;
     font-size: 18px;
-    color: #032929;
+    color: rgb(95, 26, 26)
 }
 .text2 h2, h4{
     text-align: center;
@@ -211,7 +211,7 @@ a b, .completed b{
     margin: 20px 0;
 }
 .living_worlds{
-    background-image: url(31362-priroda_derevya_reka_nature_trees_river.jpg);  
+    background-image: url(37897-priroda_derevya_trava.jpg);  
     background-repeat: no-repeat;   
     background-position: center center; 
     background-attachment: fixed; 

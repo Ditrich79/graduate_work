@@ -1,0 +1,11 @@
+{% extends 'living_worlds/living_worlds.html' %}
+
+{% block content %}
+<div class="element">
+    <div><img src="{{ world.image.url }}" alt=""></div>
+    <div class="text2">
+        <h2 class="single_travel_title">{{ world.title }}</h2>
+        {{ world.description|safe }}
+    </div>
+</div>
+{% endblock %}
