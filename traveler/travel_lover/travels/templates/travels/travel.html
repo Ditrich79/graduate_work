@@ -7,5 +7,13 @@
         <h2 class="single_travel_title">{{ travel.title }}</h2>
         {{ travel.description|safe }}
     </div>
+    <div class="slides">
+        <img id="block_slides" class="picture" src="{{ travel.image2.url }}" alt="">
+        <img class="picture" src="{{ travel.image3.url }}" alt="">
+        <img class="picture" src="{{ travel.image4.url }}" alt="">
+        <img class="picture" src="{{ travel.image5.url }}" alt="">
+    </div>
+    <button class="btnRight">Следующая картинка</button>
 </div>
+
 {% endblock %}

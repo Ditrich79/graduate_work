@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'travels.apps.TravelsConfig',
     'living_worlds.apps.LivingWorldsConfig',
+    'discovery_history.apps.DiscoveryHistoryConfig',
 ]
 
 MIDDLEWARE = [
