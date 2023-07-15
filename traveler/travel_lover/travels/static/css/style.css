@@ -235,3 +235,14 @@ a b, .completed b{
     color: beige;
     background-color: rgb(132, 34, 34);
 }
+
+.discovery_history {
+    background-image: url(50143-korabl_shtorm_more.jpg);  
+    background-repeat: no-repeat;   
+    background-position: center center; 
+    background-attachment: fixed; 
+    -webkit-background-size: cover;  
+    -moz-background-size: cover;  
+    -o-background-size: cover; 
+    background-size: cover;
+}

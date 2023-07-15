@@ -1,0 +1,23 @@
+{% extends 'discovery_history/discovery_history.html' %}
+
+
+{% block content %}
+
+<div class="element_title">
+    <div class="text">
+        <h2 class="main_title">История великих географических открытий:</h2>
+    </div>
+</div>
+<div class="block">
+    {% for story in stories %}
+    <div class="element">
+        <div><a href="{% url 'story' story.id %}"><img src="{{ story.image.url }}" alt=""></a></div>
+        <div class="text">
+            <h2><a href="{% url 'story' story.id %}">{{ story.title }}</a></h2>
+            <p>{{ story.description|striptags|truncatechars:250 }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

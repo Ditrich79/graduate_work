@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('travels.urls')),
     path('living_worlds', include('living_worlds.urls')),
+    path('discovery_history', include('discovery_history.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

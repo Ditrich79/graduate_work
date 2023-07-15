@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html class="discovery_history" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel lover</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'travels/favicon.ico' %}">
+</head>
+<body>
+{% include 'travels/navbar.html' %}
+    <div class="content">
+        <div class="wrap">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+<script class="btnRight" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
