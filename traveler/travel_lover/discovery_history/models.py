@@ -13,3 +13,8 @@ class Stories(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        verbose_name = 'географическое открытие'
+        verbose_name_plural = 'Географические открытия'
+        ordering = ['-created']

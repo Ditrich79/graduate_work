@@ -2,4 +2,9 @@ from django.contrib import admin
 from .models import Worlds
 
 
-admin.site.register(Worlds)
+class WorldsAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'created', 'image')
+    list_display_links = ('id', 'title')
+
+
+admin.site.register(Worlds, WorldsAdmin)

@@ -13,3 +13,9 @@ class Worlds(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        verbose_name = 'живой мир'
+        verbose_name_plural = 'Живые миры'
+        ordering = ['-created']
+
