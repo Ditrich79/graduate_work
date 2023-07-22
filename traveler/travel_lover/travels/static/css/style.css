@@ -210,7 +210,7 @@ a b, .completed b{
     -o-background-size: cover; 
     background-size: cover;
 }
-.slides {
+/* .slides {
     width: 1024px;
     height: 768px;
 }
@@ -234,7 +234,7 @@ a b, .completed b{
     cursor: pointer;
     color: beige;
     background-color: rgb(132, 34, 34);
-}
+} */
 
 .discovery_history {
     background-image: url(50143-korabl_shtorm_more.jpg);  
@@ -245,4 +245,64 @@ a b, .completed b{
     -moz-background-size: cover;  
     -o-background-size: cover; 
     background-size: cover;
+}
+
+/* Slider */
+#viewport {
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+}
+ 
+.slider {
+    position: relative;
+    transition: 500ms;
+    width: calc(100% * 4);
+    height: 768px; 
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+ 
+.slide {
+    width: 100%;
+    height: 768px;
+}
+ 
+.slide img {
+    width: 100%;
+    height: 768px;
+    object-fit: cover;
+    object-position: 0;
+}
+ 
+#viewSlider {
+    width: calc(30px * 4);
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.viewSlide {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+.prev{
+    padding: 10px 50px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px 4px #021c1f;
+    margin: 10px 100px 10px 290px;
+    font-size: 24px;
+    cursor: pointer;
+    color: beige;
+    background-color: rgb(132, 34, 34);
+}
+.next{
+    padding: 10px 40px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px 4px #021c1f;
+    font-size: 24px;
+    cursor: pointer;
+    color: beige;
+    background-color: rgb(132, 34, 34);
 }

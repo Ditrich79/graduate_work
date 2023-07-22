@@ -2,13 +2,13 @@ from django.db import models
 
 
 class Travels(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField(null=True, blank=True)
-    image = models.ImageField(upload_to='travels/images/')
-    image2 = models.ImageField(upload_to='travels/images/', null=True, blank=True)
-    image3 = models.ImageField(upload_to='travels/images/', null=True, blank=True)
-    image4 = models.ImageField(upload_to='travels/images/', null=True, blank=True)
-    image5 = models.ImageField(upload_to='travels/images/', null=True, blank=True)
+    title = models.CharField(max_length=100, verbose_name='Заголовок')
+    description = models.TextField(null=True, blank=True, verbose_name='Статья')
+    image = models.ImageField(upload_to='travels/images/', verbose_name='Картинка1')
+    image2 = models.ImageField(upload_to='travels/images/', null=True, blank=True, verbose_name='Картинка2')
+    image3 = models.ImageField(upload_to='travels/images/', null=True, blank=True, verbose_name='Картинка3')
+    image4 = models.ImageField(upload_to='travels/images/', null=True, blank=True, verbose_name='Картинка4')
+    image5 = models.ImageField(upload_to='travels/images/', null=True, blank=True, verbose_name='Картинка5')
 
     def __str__(self):
         return self.title
