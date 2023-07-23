@@ -12,7 +12,7 @@ viewSliders[0].style.backgroundColor = "green";
  
 btnNext.addEventListener("click", function () {
     viewSliders[viewSlide].style.backgroundColor = "red";
-    if (viewSlide < 3) { 
+    if (viewSlide < 4) { 
         viewSlide++;
     } else { 
         viewSlide = 0;
@@ -27,7 +27,7 @@ btnPrev.addEventListener("click", function () {
         viewSlide--; 
     } 
     else { 
-        viewSlide = 3; 
+        viewSlide = 4; 
     }
     viewSliders[viewSlide].style.backgroundColor = "green";
     slider.style.left = -viewSlide * viewport + "px";

@@ -9,6 +9,7 @@ class Travels(models.Model):
     image3 = models.ImageField(upload_to='travels/images/', null=True, blank=True, verbose_name='Картинка3')
     image4 = models.ImageField(upload_to='travels/images/', null=True, blank=True, verbose_name='Картинка4')
     image5 = models.ImageField(upload_to='travels/images/', null=True, blank=True, verbose_name='Картинка5')
+    image6 = models.ImageField(upload_to='travels/images/', null=True, blank=True, verbose_name='Картинка6')
 
     def __str__(self):
         return self.title

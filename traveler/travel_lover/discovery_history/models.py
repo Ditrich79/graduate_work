@@ -9,6 +9,7 @@ class Stories(models.Model):
     image3 = models.ImageField(upload_to='stories/images/', null=True, blank=True, verbose_name='Картинка3')
     image4 = models.ImageField(upload_to='stories/images/', null=True, blank=True, verbose_name='Картинка4')
     image5 = models.ImageField(upload_to='stories/images/', null=True, blank=True, verbose_name='Картинка5')
+    image6 = models.ImageField(upload_to='stories/images/', null=True, blank=True, verbose_name='Картинка6')
     created = models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации')
 
     def __str__(self):

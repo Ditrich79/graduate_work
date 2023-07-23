@@ -17,5 +17,16 @@
     </div>
     {% endfor %}
 </div>
+<div class="paginator">
+    <ul class="container">
+        {% for page in paginator.page_range %}
+        {% if page == travels.number %}
+        <li><a href="?page={{ page }}" class="btn page-link btn--sub"></a></li>
+        {% else %}
+        <li><a href="?page={{ page }}" class="btn page-link"></a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
 
 {% endblock %}
